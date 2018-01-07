@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Пользователи{% endblock %}
+
+{% block header %}<h2 class="text-left">Список пользователей:</h2>{% endblock %}
+
+{% block body %}
+    {% for user in users %}
+        <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+        <p>Возраст: {{ user.age }}</p>
+        <p>Email: {{ user.email }}</p>
+        <hr>
+    {% endfor %}
+{% endblock %}

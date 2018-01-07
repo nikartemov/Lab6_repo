@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block header %}<h2 class="text-left">Главная</h2>{% endblock %}
+
+{% block body %}
+    <h3><a href="{% url 'teams' %}">Список всех команд</a></h3>
+    <h3><a href="{% url 'users' %}">Список всех пользователей</a></h3>
+    <hr>
+{% endblock %}
